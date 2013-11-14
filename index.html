@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="UlamSpiral.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				new UlamSpiral({
+					canvas: 'spiral',
+					corners: 4,
+					points: 200,
+					labels: true
+				});
+				new UlamSpiral({
+					canvas: 'spiral2'
+				});
+				new UlamSpiral({
+					canvas: 'spiral3',
+					corners: 6,
+					points: 20000,
+					labels: false
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<canvas id="spiral" width="400" height="400"></canvas>
+		<canvas id="spiral2" width="400" height="400"></canvas>
+		<canvas id="spiral3" width="400" height="400"></canvas>
+	</body>
+</html>
